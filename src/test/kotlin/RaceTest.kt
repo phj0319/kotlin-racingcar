@@ -1,7 +1,6 @@
 import org.assertj.core.api.Assertions
 import org.junit.jupiter.api.Test
 import racingcar.domain.CarEngine
-import racingcar.domain.InputParameters
 import racingcar.domain.Race
 import racingcar.domain.RacingCar
 
@@ -9,12 +8,12 @@ class RaceTest {
     @Test
     fun `우등 자동차 경주 잘 진행되니?`() {
         val carNames: List<String> = listOf("pobi", "crong", "honux")
-        val inputParameters = InputParameters(carNames, 5)
+        val numberOfRace = 5
         val goodEngine = CarEngine(9)
         val racingCars: List<RacingCar> = carNames.map { RacingCar(carName = it, carEngine = goodEngine) }
         val race = Race(racingCars)
 
-        repeat(inputParameters.numberOfRace) {
+        repeat(numberOfRace) {
             race.tryRace()
         }
 
@@ -24,12 +23,12 @@ class RaceTest {
     @Test
     fun `열등 자동차 경주 잘 진행되니?`() {
         val carNames: List<String> = listOf("pobi", "crong", "honux")
-        val inputParameters = InputParameters(carNames, 5)
+        val numberOfRace = 5
         val badEngine = CarEngine(1)
         val racingCars: List<RacingCar> = carNames.map { RacingCar(carName = it, carEngine = badEngine) }
         val race = Race(racingCars)
 
-        repeat(inputParameters.numberOfRace) {
+        repeat(numberOfRace) {
             race.tryRace()
         }
 

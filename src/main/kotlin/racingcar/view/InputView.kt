@@ -1,7 +1,5 @@
 package racingcar.view
 
-import racingcar.domain.InputParameters
-
 object InputView {
     private const val PROMPT_GET_CAR_NAMES = "경주할 자동차 이름을 입력하세요(이름은 쉼표(,)를 기준으로 구분):"
     private const val PROMPT_GET_NUMBER_OF_RACE = "시도할 횟수는 몇 회인가요?"
@@ -12,10 +10,10 @@ object InputView {
 
     private const val SEPERATOR = ","
 
-    fun run(): InputParameters {
+    fun run(): Pair<List<String>, Int> {
         val carNames = getCarNames()
         val numberOfRace = getNumberOfRace()
-        return InputParameters(carNames, numberOfRace)
+        return Pair(carNames, numberOfRace)
     }
     private fun getCarNames(): List<String> {
         println(PROMPT_GET_CAR_NAMES)
