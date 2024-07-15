@@ -1,7 +1,9 @@
-import CarRacing.Domain.Race
-import CarRacing.Domain.RacingCar
-import CarRacing.View.InputView
-import CarRacing.View.ResultView
+package racingcar
+
+import racingcar.domain.Race
+import racingcar.domain.RacingCar
+import racingcar.view.InputView
+import racingcar.view.ResultView
 
 fun main() {
     val inputParameters = InputView.run()

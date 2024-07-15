@@ -1,7 +1,7 @@
-package CarRacing.View
+package racingcar.view
 
-import CarRacing.Domain.Race
-import CarRacing.Domain.RacingCar
+import racingcar.domain.Race
+import racingcar.domain.RacingCar
 
 object ResultView {
     private const val PROMPT_START = "실행 결과"

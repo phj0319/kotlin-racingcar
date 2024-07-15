@@ -1,6 +1,6 @@
-import CarRacing.Domain.CarEngine
 import org.assertj.core.api.Assertions
 import org.junit.jupiter.api.Test
+import racingcar.domain.CarEngine
 
 class CarEngineTest {
     @Test

@@ -1,4 +1,4 @@
-package CarRacing.Domain
+package racingcar.domain
 
 enum class RaceErrorMessage(val message: String) {
     NO_CARS("차량 없음");

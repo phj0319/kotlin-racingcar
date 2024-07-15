@@ -1,4 +1,4 @@
-package CarRacing.Domain
+package racingcar.domain
 
 const val NO_NAME = "NAME"
 const val INITIAL_PROGRESS = 0

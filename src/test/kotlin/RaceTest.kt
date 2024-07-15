@@ -1,9 +1,9 @@
-import CarRacing.Domain.CarEngine
-import CarRacing.Domain.Race
-import CarRacing.Domain.RacingCar
-import CarRacing.View.InputParameters
 import org.assertj.core.api.Assertions
 import org.junit.jupiter.api.Test
+import racingcar.domain.CarEngine
+import racingcar.domain.InputParameters
+import racingcar.domain.Race
+import racingcar.domain.RacingCar
 
 class RaceTest {
     @Test
